@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #a41d35;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 0px;
+  height: 490px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 100px;
+}
+
+iframe {
+  display: block;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="content">
+  <h2>Welcome to Harward!</h2>
+  <p>Our slogan: "Only true with the W!"</p>
+</div>
+  <div class="row">
+    <div class="column" style="background-color:#646c6c; text-align:center;" >
+      <img height=100% src="../static/hogwarts.jpg">
+    </div>
+    <div class="column" style="background-color:#ded9da;">
+      <h2>Our campus at Harward University</h2>
+      <p>The grounds and premises at Harward University are filled with history. There is something to discover at every corner. Sometimes you do not even have to walk, because the stairs move themselves...</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#ded9da;">
+      <h2>Study Advisor</h2>
+      <p>Some text..</p>
+    </div>
+    <div class="column" style="background-color:#646c6c; text-align:center;">
+      <p align="center">
+        <iframe
+            allow="microphone;"
+            align="center"
+            width="350"
+            height="430"
+            src="https://console.dialogflow.com/api-client/demo/embedded/05608954-5829-49a8-878b-5666c870492a">
+        </iframe>
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

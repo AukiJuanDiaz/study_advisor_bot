@@ -70,12 +70,13 @@ iframe {
     </div>
     <div class="column" style="background-color:#646c6c; text-align:center;">
       <p align="center">
-        <iframe
-            allow="microphone;"
-            width="350"
-            height="430"
-            src="https://console.dialogflow.com/api-client/demo/embedded/05608954-5829-49a8-878b-5666c870492a">
-        </iframe>
+        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+        <df-messenger
+          intent="WELCOME"
+          chat-title="StudyBot"
+          agent-id="05608954-5829-49a8-878b-5666c870492a"
+          language-code="en"
+        ></df-messenger>
       </p>
     </div>
   </div>

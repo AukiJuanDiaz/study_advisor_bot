@@ -39,6 +39,19 @@ iframe {
   display: block;
 }
 
+
+df-messenger {
+ --df-messenger-bot-message: #878fac;
+ --df-messenger-button-titlebar-color: #df9b56;
+ --df-messenger-chat-background-color: #fafafa;
+ --df-messenger-font-color: white;
+ --df-messenger-send-icon: #878fac;
+ --df-messenger-user-message: #479b3d;
+}
+
+
+
+
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column {
@@ -75,6 +88,7 @@ iframe {
           chat-title="StudyBot"
           agent-id="05608954-5829-49a8-878b-5666c870492a"
           language-code="en"
+          wait-open="True"
         ></df-messenger>
     </div>
   </div>

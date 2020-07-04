@@ -30,6 +30,18 @@ body {
   background: white;
   padding: 10px;
   text-align: center;
+  width: 60%;
+}
+
+.one {
+  width: 15%;
+  height: 100px;
+  float: left;
+}
+
+.two {
+  margin-left: 15%;
+  height: 100px;
 }
 
 /* Create two equal columns that floats next to each other */
@@ -45,8 +57,8 @@ body {
   content: "";
   display: table;
   clear: both;
-  margin-bottom: 100px;
-}
+  /* margin-bottom: 100px; */
+  }
 
 iframe {
   display: block;
@@ -75,9 +87,14 @@ df-messenger {
 </head>
 <body>
 
-<div class="content">
-  <h2>Welcome to Harward!</h2>
-  <p>Our slogan: "Only true with the W!"</p>
+<div class="content" style="width: 80%;">
+    <div class="one">
+        <img height=100% src="../static/harward_logo_vanitas.png">
+    </div>
+    <div class="two">
+        <h2>Welcome to Harward!</h2>
+        <p>Our slogan: "Only true with the W!"</p>
+    </div>
 </div>
   <div class="row">
     <div class="column" style="background-color:#646c6c; text-align:center;" >
@@ -98,6 +115,8 @@ df-messenger {
           "Willkommen an unseren großartigen Universität Haward". Und beachten Sie "Only true with the W" </p>
     </div>
   </div>
+
+    <div class="content" style="height:100px;"></div>
 
   <div class="row">
     <div class="column" style="background-color:#ded9da; padding:10px;">
@@ -125,6 +144,8 @@ df-messenger {
         ></df-messenger>
     </div>
   </div>
+
+<div class="content" style="height:100px;"></div>
 
 </body>
 </html>

@@ -6,5 +6,12 @@ It is a flask app to deploy a website of the "Harward" university via Heroku. Ke
 You can find the website of our imaginary university at:
 https://harward-study-advisor-bot.herokuapp.com/
 
+!["Haward" Website with chatbot](StudyBotProject.png)
+
 (Due to the scope of the event, website and chatbot are in German language.)
+
+The code in this project is mostly related to the website, that is the context of the chatbot.
+
+The actually chat logic was constructed in a Dialogflow project:
+https://dialogflow.cloud.google.com/#/agent/studybot-ircnjp/intents
 
